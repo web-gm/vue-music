@@ -1,5 +1,5 @@
 /**
- * article模块接口列表
+ * 首页模块接口列表
  */
 
 import base from './base' // 导入接口域名列表
@@ -28,10 +28,26 @@ const article = {
   //     params: params
   //   })
   // },
+  // 首页推荐，轮播图
   banner () {
     return axios.get(`${base.api}/banner`, {
     })
   },
+  // 推荐歌单
+  personalized () {
+    return axios.get(`${base.api}/personalized`, {
+    })
+  },
+  // 推荐新歌
+  newsong () {
+    return axios.get(`${base.api}/personalized/newsong`, {
+    })
+  },
+  // 推荐新碟
+  newalbum (params) {
+    return axios.get(`${base.api}/top/album`, params)
+  },
+  // 独家放送
   privatecontent () {
     return axios.get(`${base.api}/personalized/privatecontent`, {
     })

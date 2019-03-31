@@ -5,9 +5,11 @@ import App from './App'
 import router from './router'
 import store from './store' // 导入vuex文件
 import api from './api/index' // 导入api接口
+import tools from '@/utils/num_treatment.js'
 
 Vue.config.productionTip = false
 Vue.prototype.$api = api // 将api挂载到vue的原型上
+Vue.prototype.$tools = tools
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
