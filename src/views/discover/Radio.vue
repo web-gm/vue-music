@@ -1,16 +1,15 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div>
+    Music
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'Radio'
 }
 </script>
 
-<style>
-#app {
-}
+<style scoped>
+
 </style>
